@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia;
+  }
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+.header {
+    background-color: #7b1034;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header .shipwave-text {
+    flex: 1;
+    font-size: 30px;
+}
+
+.header .navigation-bar {
+    flex: 1;
+    text-align: right;
+}
+
+.header .navigation-bar a {
+    color: white;
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .navigation-bar a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.header .navigation-bar a.logout {
+    background-color: #f8a29e;
+    color: #7b1034;
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.section .navigation-bar a.logout i {
+    font-size: 20px;
+}
