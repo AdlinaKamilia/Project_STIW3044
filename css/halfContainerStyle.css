@@ -69,8 +69,8 @@ body, html {
   }
   
   .click-container {
-    width: 70%;
-    height: 30vh;
+    width: 200px;
+    height: 200px;
     border-color: #8f8585;
     background-color: white;
     border-radius: 40px;
@@ -92,11 +92,15 @@ body, html {
     grid-gap: 10%;
   }
   .icon-container {
-    margin-top: 10px;
-    
+    margin-top: 0px;
     width: 150px; /* Adjust the width as needed */
     height: 200px; /* Adjust the height as needed */
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #f9aa98;
+  }
+  .click-container:hover .rounded-rectangle {
+    background-color: #f9aa98;
+    color: #7b1034;
   }
