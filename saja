@@ -84,3 +84,67 @@
   </body>
 </body>
 </html>
+
+
+
+if($search != null || $search != '')
+        {
+            //masukkan take dta based on search only
+            $query = $connection->query('SELECT * FROM parcel WHERE tracking_number LIKE "%' . $search . '%"');
+            $parcel_entries = $query->fetchAll(PDO::FETCH_ASSOC);
+        }
+        else if($date != null && $date != "dd/mm/yyyy"){
+            //masukkan based on date only
+            $query = $connection->query('SELECT * FROM parcel WHERE date_arrived ='.$date);
+            $parcel_entries = $query->fetchAll(PDO::FETCH_ASSOC);
+        }
+        else if($status != null && $status !='')
+        {
+
+        }
+        else if($payment != null && $payment != '')
+        {
+
+        }
+        else if(($search != null && $search != '') && ($date != null && $date != "dd/mm/yyyy")){
+
+        }
+        else if(($search != null && $search != '') && ($status != null && $status !='')){
+
+        }
+        else if(($search != null && $search != '') && ($payment != null && $payment != ''))
+        {
+
+        }
+        else if(($date != null && $date != "dd/mm/yyyy") && ($status != null && $status !='')){
+
+        }
+        else if(($date != null && $date != "dd/mm/yyyy") && ($payment != null && $payment != '')){
+
+        }
+        else if(($status != null && $status !='') && ($payment != null && $payment != '')){
+
+        }
+        else if(($search != null && $search != '') && ($date != null && $date != "dd/mm/yyyy") && ($status != null && $status !=''))
+        {
+
+        }
+        else if(($search != null && $search != '') && ($date != null && $date != "dd/mm/yyyy") && ($payment != null && $payment != '')){
+
+        }
+        else if(($status != null && $status !='') && ($date != null && $date != "dd/mm/yyyy") && ($payment != null && $payment != '')){
+        }
+        else if(($search != null && $search != '') && ($status != null && $status !='') && ($payment != null && $payment != '')){
+
+        }else if(($search != null && $search != '') && ($status != null && $status !='') && ($payment != null && $payment != '') && (($date != null && $date != "dd/mm/yyyy"))){
+
+        }
+        else{
+            $query = $connection->query('SELECT * FROM parcel');
+            $parcel_entries = $query->fetchAll(PDO::FETCH_ASSOC);
+        }
+    }
+    else{
+        $query = $connection->query('SELECT * FROM parcel');
+        $parcel_entries = $query->fetchAll(PDO::FETCH_ASSOC);
+    }

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Georgia;
+    font-family: Georgia,serif;
   }
 body,
 html {
@@ -8,6 +8,7 @@ html {
     margin: 0;
 }
 .header {
+    width: 100%;
     background-color: #7b1034;
     display: flex;
     align-items: center;
@@ -19,8 +20,10 @@ html {
 }
 
 .header .shipwave-text {
+    color: white;
     flex: 1;
     font-size: 40px;
+    font-weight: bold;
 }
 
 .header .navigation-bar {

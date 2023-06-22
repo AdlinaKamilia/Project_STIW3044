@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>ShipWave Mainpage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -10,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <h2 class="shipwave-text">
+        <h2 class="shipwave-text" style ="font-weight: bold;">
             ShipWave
         </h2>
         <div class="navigation-bar">
@@ -96,7 +97,7 @@
                           </div>
                         </div>
                     </a>
-                    <a href="your_parcel_page_link" style="text-decoration: none;">
+                    <a href="parcels.php?staff_id=1" style="text-decoration: none;">
                         <div class="click-container">
                           <div class="icon-container">
                             <i class="fas fa-box" style="font-size: 80px;"></i>
@@ -117,6 +118,7 @@
                         </div>
                     </a>
                 </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

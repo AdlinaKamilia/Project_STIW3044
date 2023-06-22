@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+hr{
+    border: 2px solid #7b1034
+}
+.forForm{
+    display: flex; 
+    justify-content: space-between;  
+    width: 100%;  
+    padding: 2%; 
+    flex-direction: column; 
+    padding-left: 20px;
+    padding-right: 20px; 
+    align-items: center;
+}
+form {
+    font-family: Georgia, serif;
+}
+
+form label {
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+form input {
+    font-family: Georgia, serif;
+    
+}
+
+.rounded-rectangle2 {
+    background-color: #d9d9d9;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+    margin-bottom: 1%;
+    height: 50px;
+    
+}
+.rounded-rectangle2 p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+  
+.rounded-rectangle2 h2 {
+    margin: 0;
+    font-weight: bold;
+}
