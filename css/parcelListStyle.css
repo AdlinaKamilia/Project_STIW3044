@@ -24,6 +24,9 @@ th, td {
     padding: 8px;
     text-align: center;
 }
+th{
+    background-color: rgba(249, 170, 152, 0.4);
+}
 .action-container {
     display: flex;
     justify-content: space-evenly;
@@ -58,7 +61,7 @@ th, td {
 
 .add-parcel-button button {
     padding: 10px 20px;
-    border: none;
+    border-color: white;
     border-radius: 40px;
     background-color: #7b1034;
     color: white;

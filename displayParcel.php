@@ -41,8 +41,8 @@
             ShipWave
         </h2>
         <div class="navigation-bar">
-            <a href="#">Mainpage</a>
-            <a href="#">Parcel</a>
+            <a href="mainpage.php?staff_id=<?php echo $staff_id?>">Mainpage</a>
+            <a href="parcels.php?staff_id=<?php echo $staff_id?>">Parcel</a>
             <a href="#" class="active">Details</a>
             <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i></a>
         </div>
@@ -73,7 +73,7 @@
         </div>
         <div style="display: flex; justify-content:center; align-items: center">
             <button onclick="goBack()" style="margin-right: 10px; background-color: #f9aa98; color: #7b1034; border-color: #f9aa98 ;" class="rounded-rectangle">Back</button>
-            <button onclick="goToMainpage()" style="border-color: #7b1034;"class="rounded-rectangle">Mainpage</button>
+            <button onclick="goToMainpage(<?php echo $staff_id ?>)" style="border-color: #7b1034;" class="rounded-rectangle">Mainpage</button>
         </div>
     </div>
     <script>
@@ -82,9 +82,9 @@
             window.history.back();
         }
         
-        function goToMainpage() {
+        function goToMainpage(staff_id) {
             // Redirect to the mainpage
-            window.location.href = "mainpage.php";
+            window.location.href = "mainpage.php?staff_id="+staff_id;
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

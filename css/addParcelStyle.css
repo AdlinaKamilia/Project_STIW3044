@@ -28,6 +28,10 @@ form input {
     font-family: Georgia, serif;
     
 }
+form p{
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
 
 .rounded-rectangle2 {
     background-color: #d9d9d9;
@@ -36,8 +40,7 @@ form input {
     padding-right: 20px;
     border-radius: 40px;
     margin-bottom: 1%;
-    height: 50px;
-    
+    height: 40px;
 }
 .rounded-rectangle2 p {
     margin: 0;
@@ -46,7 +49,3 @@ form input {
     text-align: center;
 }
   
-.rounded-rectangle2 h2 {
-    margin: 0;
-    font-weight: bold;
-}
